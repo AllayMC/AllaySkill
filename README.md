@@ -17,6 +17,20 @@ If you already cloned it without submodules:
 git submodule update --init --recursive
 ```
 
+## Update 🔄
+
+Pull the latest changes and refresh submodules:
+
+```bash
+git pull --recurse-submodules
+```
+
+If submodules are out of date:
+
+```bash
+git submodule update --init --recursive
+```
+
 ## Use ✅
 
 Invoke the skill by name or ask for AllayMC plugin development tasks:
