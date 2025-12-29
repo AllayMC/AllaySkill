@@ -8,7 +8,7 @@ Clone this repository into your agent's skills directory and initialize submodul
 
 ```bash
 cd <skills-dir>
-git clone --recurse-submodules <repo-url>
+git clone --recurse-submodules git@github.com:AllayMC/AllaySkill.git
 ```
 
 If you already cloned it without submodules:
