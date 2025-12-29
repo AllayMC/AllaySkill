@@ -1,0 +1,6 @@
+[submodule "references/Allay"]
+	path = references/Allay
+	url = git@github.com:AllayMC/Allay.git
+[submodule "references/JavaPluginTemplate"]
+	path = references/JavaPluginTemplate
+	url = git@github.com:AllayMC/JavaPluginTemplate.git
