@@ -43,6 +43,7 @@ Examples:
 
 - `SKILL.md`: The skill definition and workflow guidance.
 - `references/Allay`: AllayMC source and docs (submodule).
+- `references/AllayGradle`: Official AllayGradle plugin source (submodule).
 - `references/JavaPluginTemplate`: Official Java template (submodule).
 
 The skill reads AllayMC sources and the official Java plugin template via submodules under `references/`.
