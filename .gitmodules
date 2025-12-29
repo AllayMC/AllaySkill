@@ -4,3 +4,6 @@
 [submodule "references/JavaPluginTemplate"]
 	path = references/JavaPluginTemplate
 	url = git@github.com:AllayMC/JavaPluginTemplate.git
+[submodule "references/AllayGradle"]
+	path = references/AllayGradle
+	url = git@github.com:AllayMC/AllayGradle.git
