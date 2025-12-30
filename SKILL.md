@@ -9,6 +9,10 @@ description: Build, update, and troubleshoot AllayMC plugins in Java or other JV
 
 Create AllayMC plugins using the official Java template and the Allay API. Keep the workflow aligned with the latest Allay API and docs from the bundled references, and default to the template's Java 21 toolchain unless the user requests otherwise.
 
+## Null-safety policy
+
+AllayMC currently does not use annotations such as JSpecify's @Nullable/@NonNull. Unless a method's Javadoc explicitly states that a parameter or return value may be null, treat it as non-null.
+
 ## Workflow
 
 ### 1) Pick the starting point
