@@ -1,6 +1,9 @@
 ---
 name: allaymc-plugin-dev
 description: Build, update, and troubleshoot AllayMC plugins in Java or other JVM languages. Use when creating a new AllayMC plugin, migrating an existing plugin to a new Allay API version, wiring commands/events/tasks/config, or setting up Gradle and plugin metadata (plugin.json or AllayGradle plugin block).
+license: LGPL-2.1
+metadata:
+  author: AllayMC
 ---
 
 # AllayMC Plugin Development
