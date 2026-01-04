@@ -8,8 +8,11 @@ Clone this repository into your agent's skills directory and initialize submodul
 
 ```bash
 cd <skills-dir>
-git clone --recurse-submodules git@github.com:AllayMC/AllaySkill.git
+git clone --recurse-submodules git@github.com:AllayMC/AllaySkill.git allaymc-plugin-dev
 ```
+
+- For Claude Code, `<skills-dir>` is `C:/Users/<your-username>/skills`.
+- For OpenAI Codex, `<skills-dir>` is `C:/Users/<your-username>/.codex/skills/.system`.
 
 If you already cloned it without submodules:
 
