@@ -10,7 +10,7 @@ metadata:
 
 ## Overview
 
-Create AllayMC plugins using the official Java template and the Allay API. Keep the workflow aligned with the latest Allay API and docs from the bundled references, and default to the template's Java 21 toolchain unless the user requests otherwise.
+Create AllayMC plugins using the official Java template and the Allay API. Keep the workflow aligned with the latest Allay API and docs from the bundled references and default to the template's Java 21 toolchain unless the user requests otherwise.
 
 ## Null-safety policy
 
@@ -20,7 +20,7 @@ AllayMC currently does not use annotations such as JSpecify's @Nullable/@NonNull
 
 ### 1) Pick the starting point
 
-- Prefer the official template at `references/JavaPluginTemplate` for new plugins.
+- Use the official template at `references/JavaPluginTemplate` for new plugins.
 - If updating an existing plugin, diff its `build.gradle.kts` and plugin main class against the template.
 
 ### 2) Align Gradle and plugin metadata
@@ -41,9 +41,8 @@ AllayMC currently does not use annotations such as JSpecify's @Nullable/@NonNull
   - `onLoad` for lightweight setup.
   - `onEnable` for registrations and runtime wiring.
   - `onDisable` for cleanup.
-- Keep the class name and `plugin.entrance`/`plugin.json` entrance consistent.
 - If reloadable behavior is required, override `isReloadable` and implement `reload`.
-- Reference the base class in `references/Allay/api/src/main/java/org/allaymc/api/plugin/Plugin.java`.
+- Keep the class name and `plugin.entrance`/`plugin.json` entrance consistent.
 
 ### 4) Add core features (choose only what is needed)
 
@@ -52,22 +51,16 @@ AllayMC currently does not use annotations such as JSpecify's @Nullable/@NonNull
 - Tasks: follow `references/Allay/docs/tutorials/schedule-tasks.md`.
 - Config: follow `references/Allay/docs/tutorials/use-config.md`.
 - Permissions: follow `references/Allay/docs/tutorials/use-permission.md`.
-- i18n: follow `references/Allay/docs/tutorials/use-i18n.md`.
+- I18n: follow `references/Allay/docs/tutorials/use-i18n.md`.
 - Forms/UI: follow `references/Allay/docs/tutorials/use-forms.md`.
-- Data: follow `references/Allay/docs/tutorials/persistent-data-container.md`.
+- In-game object PDC: follow `references/Allay/docs/tutorials/persistent-data-container.md`.
 - Blocks/items: follow `references/Allay/docs/tutorials/block-api.md` and `references/Allay/docs/tutorials/item-api.md`.
+- Custom blocks/items: follow `references/Allay/docs/advanced/custom-block-api.md` and `references/Allay/docs/advanced/custom-item-api.md`.
 
 ### 5) Build and run
 
 - Use `./gradlew runServer` for local testing when the AllayGradle plugin is configured.
 - Use `./gradlew shadowJar` to build the shaded jar.
-- Copy the jar from `build/libs/*-shaded.jar` into the Allay server `plugins` directory.
-
-### 6) Troubleshoot (only when asked)
-
-- Plugin not loading: verify `plugin.entrance` (or `plugin.json` entrance), `api`/`api_version`, and the jar location.
-- API mismatch: update the Gradle `allay.api` version to a valid Allay API release.
-- Class not found: confirm the package name matches `group` and the compiled class name.
 
 ## Reference map (load on demand)
 
@@ -75,11 +68,11 @@ AllayMC currently does not use annotations such as JSpecify's @Nullable/@NonNull
   - `build.gradle.kts` for Gradle + AllayGradle conventions
   - `README.md` for template initialization steps
   - `src/main/java/.../JavaPluginTemplate.java` for lifecycle structure
-- AllayGradle: `references/AllayGradle`
-  - Gradle plugin sources and configuration patterns
 - Allay source and API: `references/Allay`
   - API entry points: `api/src/main/java/org/allaymc/api`
-  - Tutorials: `docs/tutorials/*.md`
+  - Docs: `docs/tutorials/*.md` and docs/advanced/*.md`
+- AllayGradle: `references/AllayGradle`
+  - Gradle plugin sources and configuration patterns
 
 ## Output expectations
 
